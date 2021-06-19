@@ -19,7 +19,7 @@ def page3(request):
         <head><title>Página 3</title></head>
         <body>
             <h1>Python no Heroku - SOCPS</h1>
-            <h2>Página3</h2>
+            <h2>Págin 3</h2>
             <a href="../">index</a>
         </body>
     </html>
@@ -37,10 +37,10 @@ def page5(request):
         <head><title>Pagina 5</title></head>
         <body>
             <h1><?php echo "Horario".date("j,n,Y");?></h1>
-            <a href="../">page2</a>
-            <a href="../">page4</a>
+            <a href="{% url 'page2' %}">page2</a>
+            <a href="{% url 'page4' %}">page4</a>
         </body>
     </html>
     '''
-    return HttpResponse(render(request, html))
+    return HttpResponse(html)
             
