@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import datetime
 
 # Create your views here.
 def index(request):
@@ -31,12 +32,12 @@ def page4(request):
 
 
 def page5(request):
-
+    data = datetime.datetime.now().strftime("%d%m%Y")
     html = '''
     <html>
         <head><title>Pagina 5</title></head>
         <body>
-            <h1><?php phpinfo() ?></h1>
+            <h1> {data} </h1>
             <h2>Página 5</h2>
             <a href="../page2">page2</a>
             <a href="../page4">page4</a>
