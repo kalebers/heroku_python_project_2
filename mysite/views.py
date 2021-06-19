@@ -28,3 +28,18 @@ def page3(request):
 
 def page4(request):
     return render(request, "page4.html")
+
+
+def page5(request):
+    html = '''
+    <html>
+        <head><title> Pagina 5 </title></head>
+        <body>
+            <h1><?php echo "Horario".date("j,n,Y");?></h1>
+            <a href="../">page4</a>
+            <a href="../">page2</a>
+        </body>
+    </html>
+    '''
+    return HttpResponse(html)
+            
