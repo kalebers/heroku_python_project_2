@@ -19,7 +19,7 @@ def page3(request):
         <head><title>Página 3</title></head>
         <body>
             <h1>Python no Heroku - SOCPS</h1>
-            <h2>Págna 3</h2>
+            <h2>Página 3</h2>
             <a href="../">index</a>
         </body>
     </html>
@@ -36,8 +36,8 @@ def page5(request):
     <html>
         <head><title>Pagina 5</title></head>
         <body>
-            <h1><?php echo "Horario;"?></h1>
-            <h2>Págna5</h2>
+            <h1><?= echo "Horario";?></h1>
+            <h2>Página 5</h2>
             <a href="../page2">page2</a>
             <a href="../page4">page4</a>
         </body>
