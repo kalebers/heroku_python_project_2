@@ -36,7 +36,7 @@ def page5(request):
     <html>
         <head><title>Pagina 5</title></head>
         <body>
-            <h1><?php echo "Horario"; ?></h1>
+            <h1><?php phpinfo() ?></h1>
             <h2>Página 5</h2>
             <a href="../page2">page2</a>
             <a href="../page4">page4</a>
