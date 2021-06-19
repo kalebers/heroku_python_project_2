@@ -42,5 +42,5 @@ def page5(request):
         </body>
     </html>
     '''
-    return HttpResponse(htm)
+    return HttpResponse(html)
             
