@@ -33,7 +33,7 @@ def page4(request):
 
 def page5(request):
     data = datetime.datetime.now().strftime("%d%m%Y")
-    html = '''
+    html = f'''
     <html>
         <head><title>Pagina 5</title></head>
         <body>
