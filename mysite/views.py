@@ -19,7 +19,7 @@ def page3(request):
         <head><title>Página 3</title></head>
         <body>
             <h1>Python no Heroku - SOCPS</h1>
-            <h2>Página 3</h2>
+            <h2>Página3</h2>
             <a href="../">index</a>
         </body>
     </html>
@@ -42,5 +42,5 @@ def page5(request):
         </body>
     </html>
     '''
-    return HttpResponse(html)
+    return HttpResponse(render(request, html))
             
